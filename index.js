@@ -15,19 +15,20 @@ router.use(function(request, response, next) {
 	next(); // Execute the next route. 
 });
 
-// The following uses sendFile() to send files 
-// from 'server' to client according to the GET request received. 
+// The following uses --sendFile() to send files-- NO!
+// response.render() to render the ejs file
+// --from 'server' to client according-- to the GET request received. 
 
 router.get("/", function(request, response) {
-	response.sendFile(path + "index.ejs");
+	response.render(path + "index.ejs");
 });
 
 router.get("/about", function(request, response) {
-	response.sendFile(path + "about.ejs");
+	response.render(path + "about.ejs");
 });
 
 router.get("/findme", function(request, response) {
-	response.sendFile(path + "findme.ejs");
+	response.render(path + "findme.ejs");
 });
 
 // Tell Express to use the routes defined above. 
