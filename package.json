@@ -1,0 +1,32 @@
+{
+  "name": "guo-ai",
+  "version": "1.0.0",
+  "description": "Simple chat SPA built using NodeJS, Bootstrap and Wit.ai.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "5.9.1"
+  },
+  "dependencies": {
+    "ejs": "2.4.1",
+    "express": "4.13.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theguoheng/guo-ai.git"
+  },
+  "keywords": [
+    "nodejs",
+    "bootstrap",
+    "express",
+    "heroku"
+  ],
+  "author": "Guo Heng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theguoheng/guo-ai/issues"
+  },
+  "homepage": "https://github.com/theguoheng/guo-ai#readme"
+}
