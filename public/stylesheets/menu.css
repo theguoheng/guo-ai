@@ -1,0 +1,50 @@
+/* Temp */
+body {
+  background: #444;
+}
+
+/* id="toggle" */
+#toggle {
+  width: 50px;
+  height: 30px;
+  margin: 20px auto;
+}
+
+/* Select descendants of id="toggle"*/
+#toggle div {
+  width: 100%;
+  height: 6px;
+  background: white;
+  margin: 4px auto;
+  transition: all 1s;
+  backface-visibility: hidden; /* hides the rotated element's backside */
+}
+
+/* Select class=".x" when toggle.on */
+#toggle.on .tophambar {
+  transform: rotate(45deg) translate(5px,6px);
+}
+
+#toggle.on .midhambar {
+  opacity: 0;
+}
+
+#toggle.on .bothambar {
+  transform: rotate(-45deg) translate(7px,-9px);
+}
+
+/* id="menu" */
+#menu {
+  color: white;
+  /*border: 1px solid white;*/
+  width: 150px;
+  height: 200px;
+  padding: 10px;
+  /* border-radius: 4px; */
+  line-height: 100px; /* May need to fix this */
+  text-align: center;
+  margin: auto;
+  display: none; /* .slideToggle() changes this to display: inline; */
+}
+
+

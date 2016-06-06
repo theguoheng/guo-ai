@@ -1,0 +1,23 @@
+	<!-- Toggling Hamburger -->
+	<div id="toggle">
+		<!-- Hamburger bars are styled divs -->
+		<div class="tophambar"></div>
+		<div class="midhambar"></div>
+		<div class="bothambar"></div>
+	</div>
+
+	<!-- /Toggling Hamburger -->
+
+	<!-- Menu -->
+	<div id="menu">
+		<p>What's on the menu</p>
+	</div>
+
+<script>
+
+	$("#toggle").click(function() {
+ 	 $(this).toggleClass("on");
+ 	 $("#menu").slideToggle();
+});
+
+</script>
