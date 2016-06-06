@@ -1,9 +1,9 @@
 var botSays = null;
 
 // Triggers upon submit button click. 
-$('#ask').on('click', function(e) {
+$('#enter-1').on('click', function(e) {
 		// Find text field by id. 
-		var textInput = document.getElementById("answer");
+		var textInput = document.getElementById("answer-1");
 		// Test that it's found. 
 		console.log(typeof textInput);
 		// JSONP request. 
@@ -19,6 +19,8 @@ $('#ask').on('click', function(e) {
   			success: function(response) {
       			console.log("success!", response);
             botSays = response; 
+            $('</p>' + botSays.entities.agenda_entry[0].value + '</p>').appendTo('#container-2 .question');
+
  			  }
-  	 });
+  	 });    
 });

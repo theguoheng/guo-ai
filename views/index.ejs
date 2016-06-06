@@ -7,12 +7,12 @@
 <body>
   	<nav class="navbar">
   		
-   		<a class="navbar-left" href="#">Guo Bot</a>
+   		<a class="navbar-left" id="pagetitle" href="#">Guo Bot</a>
    		
    		<div>
 	   		<ul class="logos-list navbar-right">
-	   			<li><img class="logos" src="images/GitHub-Mark-Light.png"></li>
-	   			<li><img class="logos" src="images/twitter_logo.png"></li>
+	   			<li><a href="https://github.com/theguoheng"><img class="logos" src="images/GitHub-Mark-Light.png"></a></li>
+	   			<li><a href="https://twitter.com/theguoheng"><img class="logos" src="images/twitter_logo.png"></a></li>
 	   		</ul>
    		</div>
   	</nav>	
@@ -27,19 +27,34 @@
 			</div>
 
 			<!-- Empty div to keep content in center -->
-			<div class="col-md-2"></div>
+			<div class="col-md-1"></div>
 
 			<!-- Text field tester -->
-			<div class="col-md-8" id="wit-interface">
+			<div class="col-md-8">
+				<div class="container-fluid" id="container-1">
 
-				<h2 class="question">Say something to Guo Bot</h2>
+					<h2 class="question">Say something to Guo Bot</h2>
 
-				<div class="col-xs-10">
-					<input type="text" class="form-control" id="answer" placeholder="Ask me something.">
+					<div class="col-xs-10">
+						<input type="text" class="form-control" id="answer-1" placeholder="Ask me something.">
+					</div>
+
+					<div class="col-xs-2">
+						<button type="submit" class="btn btn-default" id="enter-1">Enter</button>
+					</div>
 				</div>
 
-				<div class="col-xs-2">
-					<button type="submit" class="btn btn-default" id="enter">Enter</button>
+				<div class="container-fluid" id="container-2">
+
+					<h2 class="question">Bot's Response: </h2>
+
+					<div class="col-xs-10">
+						<input type="text" class="form-control" id="answer-2" placeholder="Ask me something.">
+					</div>
+
+					<div class="col-xs-2">
+						<button type="submit" class="btn btn-default" id="enter-2">Enter</button>
+					</div>
 				</div>
 
 			</div>

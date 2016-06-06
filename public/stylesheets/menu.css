@@ -3,6 +3,15 @@ body {
   background: white;
 }
 
+#container-1{
+    box-shadow: 0 0 10px gray;
+    height: 150px;
+}
+#container-2{
+    box-shadow: 0 0 10px gray;
+    height: 150px;
+    margin-top: 50px;
+}
 .question {
   color: #009688;
   text-align: left;
@@ -14,10 +23,11 @@ body {
   min-height: 120px;
 }
 
-.navbar a{
+#pagetitle {
   color: white;
   font-size: 40px;
   margin: 50px; /* Positions navbar-brand text */
+  text-decoration: none;
 }
 
 .logos-list {
