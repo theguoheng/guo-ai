@@ -10,7 +10,9 @@ var path = __dirname + '/views/';
 app.set('view engine', 'ejs');
 
 // Middleware to serve static files like stylesheets. 
+// This is why index.ejs can call "scripts/witapi.js". 
 app.use(express.static(__dirname + '/public'));
+
 // Router middle layer setup. 
 router.use(function(request, response, next) {
 	console.log("/" + request.method);
