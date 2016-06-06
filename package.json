@@ -10,11 +10,14 @@
     "node": "5.9.1"
   },
   "dependencies": {
+    "amdrequire": "0.0.3",
     "ejs": "2.4.1",
     "express": "4.13.3",
+    "jsonp": "^0.2.0",
     "node-fetch": "^1.5.1",
     "node-uuid": "^1.4.7",
     "node-wit": "^3.3.2",
+    "request": "^2.72.0",
     "requirejs": "^2.2.0"
   },
   "repository": {
