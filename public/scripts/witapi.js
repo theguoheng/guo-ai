@@ -21,5 +21,4 @@ $('#ask').on('click', function(e) {
             botSays = response; 
  			  }
   	 });
-
 });

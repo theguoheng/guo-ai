@@ -108,3 +108,9 @@ li a:focus {
   transition: border 0.3s;
   box-shadow: none;
 }
+
+/* Enter button */
+#enter {
+  border-color: #009688;
+}
+
