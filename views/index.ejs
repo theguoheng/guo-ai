@@ -5,8 +5,44 @@
 </head>
 
 <body>
+	<div class="container-fluid">
+		<div class="row">
+		<!-- Insert components in grid within this div -->
 
-	<% include ../views/partials/navigation.ejs %>
+			<!-- Navigation partial -->
+			<div class="col-md-1">
+				<% include ../views/partials/navigation.ejs %>
+			</div>
+
+			<!-- Empty div to keep content in center -->
+			<div class="col-md-2"></div>
+
+			<!-- Text field tester -->
+			<div class="col-md-8">
+
+				<h2 class="question">Ask Guo Bot a question.</h2>
+
+				<div class="col-xs-10">
+					<input type="text" class="form-control" id="answer" placeholder="Ask me something.">
+				</div>
+
+				<div class="col-xs-2">
+					<button type="submit" class="btn btn-default" id="ask">Ask!</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
+
+<script>
+	$('#ask').on('click', function(e) {
+		// Find text field by id. 
+		var textInput = document.getElementById("answer");
+		// Test that it's found. 
+		alert(textInput.value);
+	});
+</script>
+
+
 
 </html>
