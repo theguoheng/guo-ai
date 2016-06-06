@@ -19,8 +19,7 @@ $('#enter-1').on('click', function(e) {
   			success: function(response) {
       			console.log("success!", response);
             botSays = response; 
-            $('</p>' + botSays.entities.agenda_entry[0].value + '</p>').appendTo('#container-2 .question');
-
+            $('</p>' + botSays.entities.age_of_person[0].value + '</p>').appendTo('#container-2 .question');
  			  }
   	 });    
 });
