@@ -8,15 +8,31 @@ body {
   text-align: left;
 }
 
+.navbar {
+  background-color: #009688;
+  border-radius: 0; /* removes rounded corner */
+  min-height: 120px;
+}
+
 .navbar a{
   color: white;
   font-size: 40px;
-  padding: 50px; /* Positions navbar-brand text */
+  margin: 50px; /* Positions navbar-brand text */
 }
 
-.navbar {
-  border-radius: 0; /* removes rounded corner */
-  min-height: 120px;
+.logos-list {
+  list-style: none;
+  margin: 50px;
+}
+.logos-list li {
+  margin: 5px;
+  float: left;
+}
+
+/* Size the logos proportionally */
+.logos {
+  height: 40px;
+  width: 40px;
 }
 
 /* id="toggle" */
